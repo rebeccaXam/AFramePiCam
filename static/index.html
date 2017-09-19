@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello, World! A-Frame</title>
+<meta name="description" content="Hello, World! • A-Frame">
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="/aframe/main.js"></script>
+</head>
+<body>
+<img src="/stream" id="videoStream" style="display: none" crossOrigin="anonymous" />
+<a-scene>
+      <a-assets>
+        <canvas id="helloWorldCanvas" crossOrigin="anonymous"></canvas>
+      </a-assets>
+      <a-entity id="streamPlane" material="shader: flat; src: #helloWorldCanvas"
+                geometry="primitive: plane; width: 640; height: 360"
+                position="0 0 -250"
+                draw-canvas-rectangles="#helloWorldCanvas">
+</a-scene>
+</body>
+</html>
