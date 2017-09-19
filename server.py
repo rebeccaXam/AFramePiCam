@@ -3,6 +3,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.gen
 import tornado.websocket
+import tornado.httpserver
 
 class StreamHandler(tornado.web.RequestHandler):
     def __init__(self, *args, **kwargs):
