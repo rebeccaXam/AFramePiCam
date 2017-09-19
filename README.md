@@ -1,5 +1,6 @@
 # AFramePiCam
 Project the video stream of the Raspberry Pi camera onto a plane in A-Frame VR.
+![alt screenshot](https://raw.githubusercontent.com/rebeccaXam/AFramePiCam/master/Screenshot_20170823-103329.png)
 
 # Install
 This demo dependents on [Tornado Web Server](http://www.tornadoweb.org/en/stable/) and the [picamera](http://picamera.readthedocs.io/en/release-1.13/)
