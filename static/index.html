@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Hello, World! A-Frame</title>
 <meta name="description" content="Hello, World! • A-Frame">
-<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <script src="/aframe/main.js"></script>
 </head>
 <body>
@@ -13,10 +13,14 @@
       <a-assets>
         <canvas id="helloWorldCanvas" crossOrigin="anonymous"></canvas>
       </a-assets>
-      <a-entity id="streamPlane" material="shader: flat; src: #helloWorldCanvas"
-                geometry="primitive: plane; width: 640; height: 360"
-                position="0 0 -250"
-                draw-canvas-rectangles="#helloWorldCanvas">
+      <a-entity camera look-controls>
+		<!--- fix the plane onto the camera --->
+      		<a-entity id="streamPlane" material="shader: flat; src: #helloWorldCanvas"
+	                geometry="primitive: plane; width: 640; height: 360"
+	                position="0 0 -250"
+                	draw-canvas-rectangles="#helloWorldCanvas"></a-entity>
+      </a-entity>
+      <a-box position="0 0 -3" color="#ff0000"></a-box>
 </a-scene>
 </body>
 </html>
